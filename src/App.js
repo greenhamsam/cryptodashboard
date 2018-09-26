@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import './App.css';
 import styled from 'styled-components';
 
+
 const CustomElement = styled.div`
   color: green;
-`
-
-const BigElement = CustomElement.extend`
-  font-size: 30px;
 `
 
 class App extends Component {
   render() {
     return (
-      <BigElement>
+      <div>
+        <CustomElement>
+          Ohai
+        </CustomElement>
         Hi sam
-      </BigElement>
+      </div>
     );
   }
 }
